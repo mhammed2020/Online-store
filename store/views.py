@@ -16,3 +16,6 @@ def product_list(request, category_slug=None):
     {'category': category,
     'categories': categories,
     'products': products})
+
+def product_detail(request, id, slug):
+    pass
