@@ -9,3 +9,13 @@ def payment_process(request):
     order = get_object_or_404(Order, id=order_id)
     total_cost = order.get_total_cost()
     if request.method == 'POST':
+        # retrieve nonce
+        nonce = request.POST.get('payment_method_nonce', None)
+        # create and submit transaction
+        result = gateway.transaction.sale({
+        'amount': f'{total_cost:.2f}',
+        'payment_method_nonce': nonce,
+        'options': {
+        'submit_for_settlement': True
+                    }
+                                            })
