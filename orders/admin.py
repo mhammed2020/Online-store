@@ -8,7 +8,6 @@ from django.http import HttpResponse
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
     raw_id_fields = ['product']
-    actions = [export_to_csv]
     
 def export_to_csv(modeladmin, request, queryset):
     opts = modeladmin.model._meta
@@ -40,3 +39,4 @@ class OrderAdmin(admin.ModelAdmin):
     'created', 'updated']
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
+    actions = [export_to_csv]
