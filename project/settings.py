@@ -141,9 +141,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Braintree settings
-BRAINTREE_MERCHANT_ID = 'XXX' # Merchant ID
-BRAINTREE_PUBLIC_KEY = 'XXX' # Public Key
-BRAINTREE_PRIVATE_KEY = 'XXX' # Private key
+BRAINTREE_MERCHANT_ID = 'xx' # Merchant ID
+BRAINTREE_PUBLIC_KEY = 'xx' # Public Key
+BRAINTREE_PRIVATE_KEY = 'xx' # Private key
 import braintree
 BRAINTREE_CONF = braintree.Configuration(
 braintree.Environment.Sandbox,
