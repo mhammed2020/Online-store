@@ -150,3 +150,12 @@ BRAINTREE_MERCHANT_ID,
 BRAINTREE_PUBLIC_KEY,
 BRAINTREE_PRIVATE_KEY
 )
+
+
+
+LANGUAGES = (
+('en', 'English'),
+('es', 'Spanish'),
+('ar', 'arabic'),
+('fr', 'frensh'),
+)
