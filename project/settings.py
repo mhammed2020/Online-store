@@ -139,7 +139,6 @@ CART_SESSION_ID = 'cart'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-
 # Braintree settings
 BRAINTREE_MERCHANT_ID = 'xx' # Merchant ID
 BRAINTREE_PUBLIC_KEY = 'xx' # Public Key
