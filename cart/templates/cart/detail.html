@@ -55,11 +55,30 @@ method="post">
 
 
 
-<tr class="total">
+<!-- <tr class="total">
     <td>Total</td>
     <td colspan="4"></td>
     <td class="num">${{ cart.get_total_price }}</td>
-    </tr>
+</tr> -->
+
+{% if cart.coupon %}
+<tr class="subtotal">
+<td>Subtotal</td>
+<td colspan="4"></td>
+<td class="num">${{ cart.get_total_price|floatformat:2 }}</td>
+</tr>
+<tr>
+<td>
+"{{ cart.coupon.code }}" coupon
+({{ cart.coupon.discount }}% off)
+</td>
+<td colspan="4"></td>
+<td class="num neg">
+- ${{ cart.get_discount|floatformat:2 }}
+</td>
+</tr>
+{% endif %}
+
     </tbody>
     </table>
     <p class="text-right">
