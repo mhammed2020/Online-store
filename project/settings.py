@@ -111,6 +111,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en'
 
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+)
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -153,19 +160,7 @@ BRAINTREE_PRIVATE_KEY
 )
 
 
-from django.utils.translation import gettext_lazy as _
-LANGUAGES = (
-('en', _('English')),
-('es', _('Spanish')),
-)
 
-
-# LANGUAGES = (
-# ('en', 'English'),
-# ('es', 'Spanish'),
-# ('ar', 'arabic'),
-# ('fr', 'frensh'),
-# )
 
 LOCALE_PATHS = (
 os.path.join(BASE_DIR, 'locale/'),
