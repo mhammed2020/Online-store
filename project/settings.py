@@ -58,7 +58,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -141,9 +141,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Braintree settings
-BRAINTREE_MERCHANT_ID = 'hxyc8j7wytp7t4mm' # Merchant ID
-BRAINTREE_PUBLIC_KEY = 'wb57bdqtdwh69r6r' # Public Key
-BRAINTREE_PRIVATE_KEY = 'cb1ecc8891a29e5e806f4e46afcb3b0d' # Private key
+BRAINTREE_MERCHANT_ID = 'xx' # Merchant ID
+BRAINTREE_PUBLIC_KEY = 'xx' # Public Key
+BRAINTREE_PRIVATE_KEY = 'xx' # Private key
 import braintree
 BRAINTREE_CONF = braintree.Configuration(
 braintree.Environment.Sandbox,
