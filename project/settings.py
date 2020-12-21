@@ -153,13 +153,19 @@ BRAINTREE_PRIVATE_KEY
 )
 
 
-
+from django.utils.translation import gettext_lazy as _
 LANGUAGES = (
-('en', 'English'),
-('es', 'Spanish'),
-('ar', 'arabic'),
-('fr', 'frensh'),
+('en', _('English')),
+('es', _('Spanish')),
 )
+
+
+# LANGUAGES = (
+# ('en', 'English'),
+# ('es', 'Spanish'),
+# ('ar', 'arabic'),
+# ('fr', 'frensh'),
+# )
 
 LOCALE_PATHS = (
 os.path.join(BASE_DIR, 'locale/'),
