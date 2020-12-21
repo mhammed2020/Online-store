@@ -54,8 +54,8 @@ method="post">
 {% endfor %}
 
 
-
-<!-- <tr class="total">
+<!-- 
+<tr class="total">
     <td>Total</td>
     <td colspan="4"></td>
     <td class="num">${{ cart.get_total_price }}</td>
@@ -67,6 +67,10 @@ method="post">
 <td colspan="4"></td>
 <td class="num">${{ cart.get_total_price|floatformat:2 }}</td>
 </tr>
+
+
+
+
 <tr>
 <td>
 "{{ cart.coupon.code }}" coupon
@@ -74,10 +78,18 @@ method="post">
 </td>
 <td colspan="4"></td>
 <td class="num neg">
-- ${{ cart.get_discount|floatformat:2 }}
+-${{ cart.get_discount|floatformat:2 }}
 </td>
 </tr>
 {% endif %}
+<tr class="total">
+<td>Total</td>
+<td colspan="4"></td>
+<td class="num">
+${{ cart.get_total_price_after_discount|floatformat:2 }}
+</td>
+</tr>
+
 
     </tbody>
     </table>
@@ -95,11 +107,3 @@ method="post">
     <a href="{% url "orders:order_create" %}" class="button">Checkout</a>
     </p>
     {% endblock %}
-
-    <tr class="total">
-        <td>Total</td>
-        <td colspan="4"></td>
-        <td class="num">
-        ${{ cart.get_total_price_after_discount|floatformat:2 }}
-        </td>
-        </tr>
