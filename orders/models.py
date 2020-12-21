@@ -22,12 +22,18 @@ class Order(models.Model):
 
     coupon = models.ForeignKey(Coupon,related_name='orders',null=True,blank=True,on_delete=models.SET_NULL)
     discount = models.IntegerField(default=0,validators=[MinValueValidator(0), MaxValueValidator(100)])
+
     class Meta:
         ordering = ('-created',)
     def __str__(self):
         return f'Order {self.id}'
     def get_total_cost(self):
-        return sum(item.get_cost() for item in self.items.all())
+
+        # return sum(item.get_cost() for item in self.items.all())
+
+        total_cost = sum(item.get_cost() for item in self.items.all())
+        return total_cost - total_cost * \
+        (self.discount / Decimal(100))
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order,related_name='items',on_delete=models.CASCADE)
