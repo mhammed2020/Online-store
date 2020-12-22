@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-22 19:59+0100\n"
-"PO-Revision-Date: 2020-12-22 12:14+0000\n"
+"POT-Creation-Date: 2020-12-22 20:58+0100\n"
+"PO-Revision-Date: 2020-12-22 20:57+0000\n"
 "Last-Translator: b'  <steve@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,27 +30,27 @@ msgstr "Tu carro"
 
 #: .\cart\templates\cart\detail.html:14
 msgid "Image"
-msgstr ""
+msgstr "imagen"
 
 #: .\cart\templates\cart\detail.html:15
 msgid "Product"
-msgstr ""
+msgstr "prudios"
 
 #: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
 msgid "Remove"
-msgstr ""
+msgstr "msa7"
 
 #: .\cart\templates\cart\detail.html:18
 msgid "Unit price"
-msgstr ""
+msgstr "precio unita"
 
 #: .\cart\templates\cart\detail.html:19
 msgid "Price"
-msgstr ""
+msgstr "precio"
 
 #: .\cart\templates\cart\detail.html:54
 msgid "Subtotal"
-msgstr ""
+msgstr "partial total"
 
 #: .\cart\templates\cart\detail.html:59
 #, python-format
@@ -93,14 +93,8 @@ msgstr "Inglés"
 msgid "Spanish"
 msgstr "Español"
 
-#: .\store\templates\store\base.html:7
+#: .\store\templates\store\base.html:7 .\store\templates\store\base.html:12
 msgid "My store"
-msgstr "Mi tienda"
-
-#: .\store\templates\store\base.html:12
-#, fuzzy
-#| msgid "My store"
-msgid "My shop"
 msgstr "Mi tienda"
 
 #: .\store\templates\store\base.html:17
@@ -144,3 +138,8 @@ msgstr ""
 #: .\store\templates\store\product\list.html:14
 msgid "All"
 msgstr ""
+
+#, fuzzy
+#~| msgid "My store"
+#~ msgid "My shop"
+#~ msgstr "Mi tienda"
