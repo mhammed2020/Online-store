@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 20:58+0100\n"
-"PO-Revision-Date: 2020-12-22 20:57+0000\n"
+"PO-Revision-Date: 2020-12-22 21:05+0000\n"
 "Last-Translator: b'  <steve@gmail.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +34,7 @@ msgstr "imagen"
 
 #: .\cart\templates\cart\detail.html:15
 msgid "Product"
-msgstr "prudios"
+msgstr "pruduto"
 
 #: .\cart\templates\cart\detail.html:17 .\cart\templates\cart\detail.html:43
 msgid "Remove"
@@ -67,19 +67,19 @@ msgstr ""
 #: .\cart\templates\cart\detail.html:80
 #: .\store\templates\store\product\detail.html:28
 msgid "People who bought this also bought"
-msgstr ""
+msgstr "People who bought this also bought spanish"
 
 #: .\cart\templates\cart\detail.html:93
 msgid "Apply a coupon"
-msgstr ""
+msgstr "Apply a coupon sp"
 
 #: .\cart\templates\cart\detail.html:101
 msgid "Continue shopping"
-msgstr ""
+msgstr "Continue shopping sp"
 
 #: .\cart\templates\cart\detail.html:103
 msgid "Checkout"
-msgstr ""
+msgstr "Checkout sp"
 
 #: .\coupons\forms.py:4
 msgid "Coupon"
@@ -99,7 +99,7 @@ msgstr "Mi tienda"
 
 #: .\store\templates\store\base.html:17
 msgid "Language"
-msgstr ""
+msgstr "Language sp"
 
 #: .\store\templates\store\base.html:35
 msgid "Your cart"
@@ -116,30 +116,33 @@ msgid_plural ""
 "                %(items)s items, $%(total)s\n"
 "              "
 msgstr[0] ""
+"\n"
+"%(items)s productos, $%(total)s"
 msgstr[1] ""
+"\n"
+"%(items)s productos, $%(total)s"
 
 #: .\store\templates\store\base.html:44
 msgid "Your cart is empty."
-msgstr ""
+msgstr " Your cart is empty spaaaa"
 
 #: .\store\templates\store\product\detail.html:23
 msgid "Add to cart"
-msgstr ""
+msgstr "Add to cart spaaaa"
 
 #: .\store\templates\store\product\list.html:6
 #: .\store\templates\store\product\list.html:24
 msgid "Products"
-msgstr ""
+msgstr "Products spaa"
 
 #: .\store\templates\store\product\list.html:11
 msgid "Categories"
-msgstr ""
+msgstr "Categories spaa"
 
 #: .\store\templates\store\product\list.html:14
 msgid "All"
-msgstr ""
+msgstr "All spssssssss"
 
 #, fuzzy
-#~| msgid "My store"
 #~ msgid "My shop"
 #~ msgstr "Mi tienda"
