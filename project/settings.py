@@ -167,3 +167,4 @@ BRAINTREE_PRIVATE_KEY
 LOCALE_PATHS = (
 os.path.join(BASE_DIR, 'locale/'),
 )
+
