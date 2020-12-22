@@ -12,12 +12,14 @@ chardet==4.0.0
 cssselect2==0.4.1
 defusedxml==0.6.0
 Django==3.1.4
+django-rosetta==0.9.3
 flower==0.9.3
 html5lib==1.1
 idna==2.10
 importlib-metadata==3.3.0
 kombu==4.6.11
 Pillow==8.0.1
+polib==1.1.0
 pycparser==2.20
 Pyphen==0.10.0
 pytz==2020.4
