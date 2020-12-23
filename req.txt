@@ -27,6 +27,7 @@ Pyphen==0.10.0
 python-stdnum==1.14
 pytz==2020.4
 rabbitmq==0.2.0
+redis==3.4.1
 requests==2.25.1
 six==1.15.0
 sqlparse==0.4.1
