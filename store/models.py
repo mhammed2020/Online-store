@@ -46,7 +46,7 @@ class Product(TranslatableModel):
     #    index_together = (('id', 'slug'),)
 
     def __str__(self):
-        return str(self.name)
+        return self.name
 
     def get_absolute_url(self):
         return reverse('store:product_detail',
